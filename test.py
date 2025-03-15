@@ -1,3 +1,0 @@
-import matplotlib
-
-print("hello")
