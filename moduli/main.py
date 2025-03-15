@@ -3,7 +3,7 @@ from training import grid_search, random_search
 
 
 def main():
-    # Caricamento del dataset MNIST ridimensionato a 14x14 pixel
+    # Caricamento del dataset MNIST con 70'000 esempi e ridimensionato a 14x14 pixel per esempio
     X, y = load_mnist_784(width_size=14, height_size=14)
 
     # Dimensione dell'input (numero di feature per esempio)
@@ -15,7 +15,7 @@ def main():
     # Tasso di apprendimento
     learning_rate = 0.0001
     # Numero di epoche per fold
-    epochs = 5
+    epochs = 300
     # Numero di esempi dopo i quali avviene un aggiornamento della rete neurale
     batch_size = X.shape[0]
     # Numero di fold per la validazione incrociata
