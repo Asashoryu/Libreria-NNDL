@@ -18,7 +18,7 @@ def main():
     epochs = 300
     # Numero di esempi dopo i quali avviene un aggiornamento della rete neurale
     batch_size = X.shape[0]
-    # Numero di fold per la validazione incrociata
+    # Numero di fold per la cross-validation
     k = 10
 
     # Definizione dei valori degli iperparametri da testare nella grid search
