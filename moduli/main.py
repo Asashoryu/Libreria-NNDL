@@ -23,7 +23,7 @@ def main():
 
     # Definizione dei valori degli iperparametri da testare nella grid search
     hyperparameters = {
-        "h_eta_minusses": [0.7],
+        "h_eta_minusses": [0.5, 0.6, 0.7],
         "h_eta_plusses": [1.2, 1.3, 1.5],
         "h_neurons": [64, 128, 256]
     }
